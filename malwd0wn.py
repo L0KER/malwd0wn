@@ -16,7 +16,7 @@ print """
 | Don't use this application to hack! This app for          |
 | the study viruses                                         |
 #-----------------------------------------------------------#
-| malwd0wn v.1.0                                            |
+| malwd0wn v.1.1                                            |
 | Author: L0KER                                             |
 | Github: https://github.com/L0KER                          |
 | Copyright (C) 2019, Scorred Security All rights reserved  |
@@ -26,18 +26,20 @@ print """
 Select the OS
 [0] - Android
 [1] - Windows
+[2] - MacOS
+[3] - Exit
 """
 os = input("malwd0wn> ")
 if os == 0:
           print"[*] Selected OS: Android"
           print"[!] Select virus:"
           print"""
-#-------------------#
-|[0] Android Locker |
-|[1] Administrator  |
-|[2] Backdoor       |
-|[3] BotNet         |
-#-------------------#
+#-------------------#--Name--------------#
+|[0] Ransomware     | Android.LockScreen |
+|[1] Trojan         | Blackmart-fake     |
+|[2] Virus          | Android.Viking     |
+|[3] BotNet         | ING                |
+#-------------------#--------------------#
 """
           vira = input("malwd0wn> ")
           if vira == 0:
@@ -56,14 +58,14 @@ elif os == 1:
              print"[*] Selected OS: Windows"
              print"[!] Select virus:"
              print """
-#-------------------#
-|[0] Ransomware     |
-|[1] Virus          |
-|[2] BotNet         |
-|[3] Dropper        |
-|[4] Backdoor       |
-|[5] Worm           |
-#-------------------#
+#-------------------#--Name--------------#
+|[0] Ransomware     | Petya.A            |
+|[1] Virus          | Sampo              |
+|[2] BotNet         | SpyEye             |
+|[3] Dropper        | Trojan.Dropper.Gen |
+|[4] Backdoor       | ZeroAccess         |
+|[5] Worm           | Cridex             |
+#-------------------#--------------------#
 """
              virw = input("malwd0wn> ")
              if virw == 0:
@@ -84,3 +86,29 @@ elif os == 1:
              if virw == 5:
                           print"[*] Downloading..."
                           subprocess.call(['./bin/windows/worm.sh'])
+if os == 2:
+           print"[*] Selected OS: MacOS"
+           print"[!] Select virus:"
+           print """
+#-------------------#--Name--------------#
+|[0] Stealer        | OSX.Wirenet        |
+|[1] Backdoor       | OSX.Backdoor.iWorm |
+|[2] Rootkit        | rubilyn            |
+|[3] Apt trojan     | XAgent             |
+#-------------------#--------------------#
+"""
+          virm = input("malwd0wn> ")
+          if virw == 0:
+                       print"[*] Downloading..."
+                       subprocess.call(['./bin/macos/steal.sh'])
+          if virw == 1:
+                       print"[*] Downloading..."
+                       subprocess.call(['./bin/macos/backd.sh'])
+          if virw == 2:
+                       print"[*] Downloading..."
+                       subprocess.call(['./bin/macos/rootk.sh'])
+          if virw == 3:
+                       print"[*] Downloading..."
+                       subprocess.call(['./bin/macos/apttroj.sh'])
+if os == 3:
+           print"malwd0wn closing..."
