@@ -97,18 +97,18 @@ if os == 2:
 |[3] Apt trojan     | XAgent             |
 #-------------------#--------------------#
 """
-          virm = input("malwd0wn> ")
-          if virw == 0:
-                       print"[*] Downloading..."
-                       subprocess.call(['./bin/macos/steal.sh'])
-          if virw == 1:
-                       print"[*] Downloading..."
-                       subprocess.call(['./bin/macos/backd.sh'])
-          if virw == 2:
-                       print"[*] Downloading..."
-                       subprocess.call(['./bin/macos/rootk.sh'])
-          if virw == 3:
-                       print"[*] Downloading..."
-                       subprocess.call(['./bin/macos/apttroj.sh'])
+           virm = input("malwd0wn> ")
+           if virm == 0:
+                        print"[*] Downloading..."
+                        subprocess.call(['./bin/macos/steal.sh'])
+           if virm == 1:
+                        print"[*] Downloading..."
+                        subprocess.call(['./bin/macos/backd.sh'])
+           if virm == 2:
+                        print"[*] Downloading..."
+                        subprocess.call(['./bin/macos/rootk.sh'])
+           if virm == 3:
+                        print"[*] Downloading..."
+                        subprocess.call(['./bin/macos/apttroj.sh'])
 if os == 3:
            print"malwd0wn closing..."
