@@ -5,6 +5,8 @@ echo """
 | malwd0wn linux installer |
 #--------------------------#
 """
+cd bin && cd android && chmod +x * && cd ..
+cd windows && chmod +x * && cd .. && cd ..
 chmod +x malwd0wn.py
 apt-get install curl
 apt-get install python2
