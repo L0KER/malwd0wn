@@ -7,7 +7,25 @@ Application for download and test viruses!
 Don't use this application to hack! This app for the study viruses. All viruses from this utility can be run only on a virtual machine! The author is not responsible for your actions
 
 
+### Downloading
+
+```
+git clone https://github.com/L0KER/malwd0wn.git
+```
+
+
 ### Installing
+
+Give access rights to install script
+
+```
+chmod +x install.sh
+```
+or
+```
+chmod +x install-termux.sh
+```
+
 
 Follow these steps to install
 
